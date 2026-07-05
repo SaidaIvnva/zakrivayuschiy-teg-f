@@ -220,7 +220,7 @@ p {
   outline: none;
 }
 
-.card__like-button {
+.card__like-button:focus {
     outline: none;
 }
 
