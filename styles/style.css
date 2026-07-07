@@ -9,34 +9,11 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-@keyframes heart-scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes sparks-burst {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .page {
   font-family: var(--main-ff), sans-serif;
   background-image: var(--gradient-grid);
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -220,12 +197,16 @@ p {
   outline: none;
 }
 
+.card__icon-button:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 1);
+}
+
 .card__like-button:focus {
     outline: none;
 }
 
 .card__like-button:focus-visible {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
 .button__text {
@@ -236,8 +217,9 @@ p {
   color: #000000;
 }
 
-.button:hover .button__text {
-  color: #FFFFFF;
+.button .button__text {
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .like-icon {
@@ -339,7 +321,7 @@ p {
 }
 
 .save-button:focus-visible {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
 .save-button .button__text {
@@ -402,7 +384,7 @@ dialog::backdrop {
 
 .dialog-button:focus-visible {
   outline: none;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
   transition: 0.3s ease;
 }
 

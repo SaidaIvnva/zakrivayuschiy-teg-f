@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --main-ff: 'Inter-Variable';
-    --accent-ff: 'PressStart2P-Regular';
+    --accent-ff: 'PressStart2P';
     --gradient-grid: 
     repeating-linear-gradient(
       90deg,
@@ -22,7 +22,7 @@
       #e7e7e7 0.01%,
       #1a1a1a 100%
     );
-    --container-width: clamp(375px, 80%, 700px);
+    --container-width: clamp(375px, 100%, 700px);
     --animation-fill-color: red;
     --contour-color: #000;
 }
