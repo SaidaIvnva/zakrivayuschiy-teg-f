@@ -306,12 +306,11 @@ p {
 }
 
 .save-button .floppy-icon {
-  color: #000000;
   transition: color 0.3s ease;
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .save-button:focus {
