@@ -310,10 +310,7 @@ p {
   transition: color 0.3s ease;
   position: relative;
   z-index: 1;
-}
-
-.save-button:hover .floppy-icon {
-  color: #FFFFFF;
+  mix-blend-mode: difference;
 }
 
 .save-button:focus {
