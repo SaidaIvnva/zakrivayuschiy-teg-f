@@ -311,6 +311,7 @@ p {
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
+  color: #FFFFFF;
 }
 
 .save-button:focus {
